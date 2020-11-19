@@ -1,3 +1,3 @@
 # SimpleJS-CourseAPP
 
-Demo available @ http://diligent-mitten.surge.sh/course.html
+Demo available @ http://pushy-industry.surge.sh/course.html
