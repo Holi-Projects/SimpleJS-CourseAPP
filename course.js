@@ -48,14 +48,16 @@ function alertDisplay(){
         alertVal.style.display = "block"
         alertVal.append("Processing......")
         alertVal.style.backgroundColor = "green"
-        $('#loading').show();    
+        //$('#loading').css("visibility", "visible");
+        document.querySelector('#loading').style.visibility = "visible"    
 
         setTimeout(() => {
             alertVal.style.display = 'none'
             alertVal.innerHTML = ''
             alertVal.style.backgroundColor = "#f44336"
             showDis()
-            $('#loading').hide();
+           // $('#loading').css("visibility", "hidden");
+           document.querySelector('#loading').style.visibility = "hidden"
         }, 3000);
         alertVal.classList.remove("success")
         
@@ -77,7 +79,7 @@ function alertDisplay(){
 //     al.hideSubmit();
 // });
 
-$(window).ready( $('#loading').hide());
+
 
 
 //setTimeout(hideLoader, 3000);
